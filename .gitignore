@@ -1,3 +1,6 @@
+# Git
+.gitignore
+
 # Godot 4+ specific ignores
 .godot/
 
@@ -5,6 +8,32 @@
 .import/
 export.cfg
 export_presets.cfg
+*.import
+*.imported
+*.tscn.export
+*.scn.export
+*.sct.export
+*.stex
+*.reimport
+*.gd[script]
+
+# Ignore temporary files
+Thumbs.db
+.DS_Store
+
+# Ignore log and errors files
+*.log
+*.err
+
+# Ignore text backup files
+*~
+
+# Ignore C++ compilation backup files
+*.sconsign.dblite
+*.sconsign
+
+# Ignore build exportation directories
+export_*/
 
 # Imported translations (automatically generated from CSV files)
 *.translation
@@ -13,3 +42,7 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# Linux settings
+gnome-config
+misc/tkkey.md
