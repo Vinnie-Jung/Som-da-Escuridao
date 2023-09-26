@@ -99,6 +99,13 @@ Uma tela inicial que oferece as opções de iniciar um novo jogo, carregar um jo
 
 Exibe o jogo em si, com os mapas do jogo, os personagens e a interface do jogador.
 
+**Interface:**
+* Botão de configurações.
+* Item primário equipado.
+* Botão de inventário.
+* Nível de ruído.
+* Portrait de personagem.
+
 ### Carregar Jogo
 
 Mostra três espaços em que podem haver jogos salvos para serem selecionados.
