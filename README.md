@@ -5,7 +5,19 @@
 Um jogo *top-down* 2D feito em Godot.
 </div>
 
-## Sobre
+<div align="center">
+
+|                Índice                |
+|:------------------------------------:|
+|[Sobre](#sobre)                       |
+|[Ferramentas Utilizadas](#ferramentas)|
+|[Telas](#telas)                       |
+|[Equipe](#equipe)                     |
+
+</div>
+
+
+## Sobre <a name="sobre"></a>
 
 Um jogo 2D com visão *top-down* (de cima para baixo) feito com a *game engine* Godot para a disciplina de Projeto de Jogos e Entretenimento Digital, da Univali. As versões disponíveis do projeto englobam sistemas Linux, Windows, MacOs e Android.
 
@@ -58,7 +70,7 @@ Por se passar em ambientes completamente escuros, o jogador dependerá de dois i
     * Ao identificar qualquer som, o inimigo irá em direção ao mesmo.
     * Caso o inimigo acerte o jogador, automaticamente se tem um **Game Over**.
 
-## Ferramentas Utilizadas
+## Ferramentas Utilizadas <a name="ferramentas"></a>
 
 ### Trello
 
@@ -86,7 +98,7 @@ Outro aspecto que chama a atenção sobre a Godot é o fato de se tratar de uma 
 
 A Godot Engine utiliza como linguagem principal o GDScript, uma linguagem de *script* leve e performática baseada em Python, nativa da própria Godot. Outra alternativa que o motor oferece é o uso da linguagem C# da Microsoft, que apesar de possuir uma performance melhor que o GDScript, não está completamente consolidada na plataforma e, por isso, está mais sujeita a erros e *bugs*.
 
-## Telas
+## Telas <a name="telas"></a>
 
 ### Menu principal
 
@@ -117,7 +129,7 @@ Outra tela simples que exibe os créditos do jogo, apontando quem foram os contr
 
 <div align="center">
 
-## Equipe
+## Equipe <a name="equipe"></a>
 
 ### Time de desenvolvimento
 
