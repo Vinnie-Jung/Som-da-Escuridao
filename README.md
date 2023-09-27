@@ -7,6 +7,8 @@ Um jogo *top-down* 2D feito em Godot.
 
 <div align="center">
 
+<br><br>
+
 |                Índice                |
 |:------------------------------------:|
 |[Sobre](#sobre)                       |
@@ -14,6 +16,7 @@ Um jogo *top-down* 2D feito em Godot.
 |[Telas](#telas)                       |
 |[Equipe](#equipe)                     |
 
+<br><br>
 </div>
 
 
