@@ -121,45 +121,34 @@ Outra tela simples que exibe os créditos do jogo, apontando quem foram os contr
 
 ## Equipe
 
-### Time de desenvolvimento:
-
-**Pedro Camargo Aita Bittencourt**
-
-* Designer de áudio;
-* Artista 2D (personagens e cenários);
-* Game Designer;
-* Roteirista;
-
 <div align="center">
+
+### Time de desenvolvimento
+
+**Pedro Camargo Aita Bittencourt**   <br>
+Designer de áudio                    <br>
+Artista 2D (personagens e cenários)  <br>
+Game Designer                        <br>
+Roteirista                           <br>
 
 Redes:                                                   
 [Youtube](https://www.youtube.com/@spacenomad8308)       
 
-</div>
-
-
-**Vinícius Jung**
-* Programador;
-* Quality Assurance;
-* Prototipagem;
-* Game Designer;
-
-<div align="center">
+**Vinícius Jung**     <br>
+Programador           <br>
+Quality Assurance     <br>
+Prototipagem          <br>
+Game Designer         <br>
 
 Redes:
 
 [Github](https://github.com/Vinnie-Jung) | [LinkedIn](https://www.linkedin.com/in/vinicius-jung/) | [Outlook](mailto:viniciusjung@outlook.com)               
 
-</div>
-
 ### Professor
 
-**Dennis Kerr Coelho**
-
-* Supervisor
-* Produtor
-
-<div align="center">
+**Dennis Kerr Coelho**<br>
+Supervisor            <br>
+Produtor              <br>
 
 Redes:                                                    <br>
 [LinkedIn](https://www.linkedin.com/in/dennis-kerr-coelho-902a184/)
