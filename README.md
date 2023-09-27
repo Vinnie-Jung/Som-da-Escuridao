@@ -130,8 +130,13 @@ Outra tela simples que exibe os créditos do jogo, apontando quem foram os contr
 * Game Designer;
 * Roteirista;
 
-Redes:                                                   <br>
-[Youtube](https://www.youtube.com/@spacenomad8308)       <br>
+<div align="center">
+
+Redes:                                                   
+[Youtube](https://www.youtube.com/@spacenomad8308)       
+
+</div>
+
 
 **Vinícius Jung**
 * Programador;
@@ -139,11 +144,13 @@ Redes:                                                   <br>
 * Prototipagem;
 * Game Designer;
 
-Redes:                                                   <br>
-[Github](https://github.com/Vinnie-Jung)                 <br>
-[LinkedIn](https://www.linkedin.com/in/vinicius-jung/)   <br>
-[Outlook](mailto:viniciusjung@outlook.com)               <br>
+<div align="center">
 
+Redes:
+
+[Github](https://github.com/Vinnie-Jung) | [LinkedIn](https://www.linkedin.com/in/vinicius-jung/) | [Outlook](mailto:viniciusjung@outlook.com)               
+
+</div>
 
 ### Professor
 
@@ -152,6 +159,9 @@ Redes:                                                   <br>
 * Supervisor
 * Produtor
 
+<div align="center">
+
 Redes:                                                    <br>
 [LinkedIn](https://www.linkedin.com/in/dennis-kerr-coelho-902a184/)
 
+</div>
