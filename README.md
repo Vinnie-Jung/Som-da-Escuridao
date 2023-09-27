@@ -130,6 +130,8 @@ Uma simples tela que permite modificar alguns elementos do jogo, como tamanho de
 
 Outra tela simples que exibe os créditos do jogo, apontando quem foram os contribuidores e o que cada um colaborou dentro do projeto.
 
+<!-- ADICIONAR CONTROLES DO JOGO AQUI> -->
+
 <div align="center">
 
 ## Equipe <a name="equipe"></a>
