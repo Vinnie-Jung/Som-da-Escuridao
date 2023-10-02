@@ -4,7 +4,7 @@
 
 Um jogo *top-down* 2D feito em Godot. 
 <br><br>
-Go to: <a href="https://github.com/Vinnie-Jung/Som-da-Escuridao/README.md">*English Version*</a>
+Go to: <a href="README.md">*English Version*</a>
 </div>
 
 <div align="center">
