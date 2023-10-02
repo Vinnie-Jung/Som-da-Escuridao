@@ -3,7 +3,7 @@
 # Som da Escuridão
 
 Um jogo *top-down* 2D feito em Godot. 
-<br><br>
+<br>
 Go to: <a href="README.md">*English Version*</a>
 </div>
 
