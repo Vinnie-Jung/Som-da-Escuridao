@@ -154,7 +154,6 @@ Prototyping          <br>
 Game Designer        <br>
 
 Social Media:
-
 [Github](https://github.com/Vinnie-Jung) | [LinkedIn](https://www.linkedin.com/in/vinicius-jung/) | [Outlook](mailto:viniciusjung@outlook.com)               
 
 ### Professor
