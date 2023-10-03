@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://bloksv75bt71v"]
+[gd_scene load_steps=30 format=3 uid="uid://bloksv75bt71v"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_l3ug1"]
 [ext_resource type="Texture2D" uid="uid://v5jmo4tna0tn" path="res://assets/sprites/player/running_side.png" id="2_84gxq"]
@@ -77,6 +77,26 @@ region = Rect2(384, 0, 96, 176)
 atlas = ExtResource("4_iew3n")
 region = Rect2(480, 0, 96, 176)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wqau"]
+atlas = ExtResource("2_84gxq")
+region = Rect2(0, 0, 112, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uad3o"]
+atlas = ExtResource("2_84gxq")
+region = Rect2(112, 0, 112, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oyjht"]
+atlas = ExtResource("2_84gxq")
+region = Rect2(224, 0, 112, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sqbwg"]
+atlas = ExtResource("2_84gxq")
+region = Rect2(336, 0, 112, 160)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_en2wu"]
+atlas = ExtResource("2_84gxq")
+region = Rect2(448, 0, 112, 160)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_0mph0"]
 animations = [{
 "frames": [{
@@ -128,7 +148,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"running_side",
-"speed": 8.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -152,20 +172,40 @@ animations = [{
 "loop": true,
 "name": &"running_up",
 "speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wqau")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uad3o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oyjht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sqbwg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_en2wu")
+}],
+"loop": true,
+"name": &"sprint",
+"speed": 10.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mqaye"]
 radius = 19.0
 height = 136.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
 script = ExtResource("1_l3ug1")
 
-[node name="Animation" type="AnimatedSprite2D" parent="."]
+[node name="animation" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.12946, 1)
 sprite_frames = SubResource("SpriteFrames_0mph0")
-animation = &"running_up"
-frame_progress = 0.520781
+animation = &"sprint"
 
-[node name="Collision" type="CollisionShape2D" parent="."]
+[node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_mqaye")
