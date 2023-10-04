@@ -22,7 +22,7 @@ func _physics_process(delta : float) -> void:
 
 func _movement(delta : float) -> void:
 	# Verifies player direction
-	_direction = Input.get_vector("MoveLeft", "MoveRight", "MoveUp", "MoveDown")
+	_direction = Input.get_vector("moveLeft", "moveRight", "moveUp", "moveDown")
 	_direction = _direction.normalized() # Diagonals don't duplicate player's speed
 	
 	self.velocity = _direction * (_SPEED * delta) * _sprintSpeed
@@ -31,22 +31,44 @@ func _movement(delta : float) -> void:
 func _animation() -> void:
 	# Animation tree (temporary)
 	if (_sprinting && _direction != Vector2.ZERO):
-		$animation.play("sprint")
-	elif (_direction.y == -1):
-		$animation.play("running_up")
+		$animation.speed_scale = 1.5
+	else:
+		$animation.speed_scale = 1
+		
+	if (_direction.y == -1):
+		$animation.play("moving_up")
 	elif (_direction.y == 1):
-		$animation.play("running_down")
+		$animation.play("moving_down")
 	elif (_direction.x != 0):
-		$animation.play("running_side")
+		$animation.play("moving_side")
 		$animation.flip_h = false if (_direction.x > 0) else true
 	else:
 		$animation.play("idle")
 
 
 func _key_listeners() -> void:
-	# Sprint (Shift key)
-	if (Input.is_action_pressed("Sprint")):
-		_sprinting = true
-	else:
+	# Sprint
+	if (Input.is_action_pressed("sprint") && !_sprinting):
+		if ($sprint_timer.wait_time == 5.0 && $sprint_timer.time_left <= 0):
+			_sprinting = true
+			$sprint_timer.wait_time = 2.0
+			$sprint_timer.start()
+	
+	# Interact 
+	if (Input.is_action_pressed("interact")):
+		pass
+	
+	# Inventory
+	if (Input.is_action_pressed("inventory")):
+		pass
+	
+	# Settings
+	if (Input.is_action_pressed("settings")):
+		pass
+
+
+func _on_sprint_timer_timeout():
+	if (_sprinting):
 		_sprinting = false
-	pass
+		$sprint_timer.wait_time = 5.0
+		$sprint_timer.start()
