@@ -30,19 +30,6 @@ func _movement(delta : float) -> void:
 
 func _animation() -> void:
 	# Animation tree (temporary)
-<<<<<<< HEAD
-	if (_direction.y == -1):
-		$animation.play("running_up")
-	elif (_direction.y == 1):
-		$animation.play("running_down")
-	elif (_direction.x != 0):
-		$animation.play("running_side")
-		$animation.flip_h = false
-		if (_direction.x < 0):
-			$animation.flip_h = true
-	else:
-		$animation.play("idle")
-=======
 	if (_sprinting && _direction != Vector2.ZERO):
 		$animation.speed_scale = 1.5
 	else:
@@ -86,4 +73,3 @@ func _on_sprint_timer_timeout():
 		_sprinting = false
 		$sprint_timer.wait_time = 5.0
 		$sprint_timer.start()
->>>>>>> player-movement
