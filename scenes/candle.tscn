@@ -9,7 +9,7 @@ radius = 39.0512
 [node name="candle" type="Area2D"]
 script = ExtResource("1_yi84e")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="sprite" type="Sprite2D" parent="."]
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("1_d132s")
 

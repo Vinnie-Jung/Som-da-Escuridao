@@ -3,6 +3,7 @@ extends CharacterBody2D
 @onready var _direction : Vector2 = Vector2.ZERO
 @onready var _sprinting : bool = false
 @onready var _sprintSpeed : float
+@onready var _idleDirection : String = "idle_side"
 
 const _SPEED : float = 50.0
 
@@ -36,14 +37,17 @@ func _animation() -> void:
 		$animation.speed_scale = 1
 		
 	if (_direction.y == -1):
-		$animation.play("moving_up")
+		$animation.play("walking_up")
+		_idleDirection = "idle_back"
 	elif (_direction.y == 1):
-		$animation.play("moving_down")
+		$animation.play("walking_down")
+		_idleDirection = "idle_front"
 	elif (_direction.x != 0):
-		$animation.play("moving_side")
+		$animation.play("walking_side")
 		$animation.flip_h = false if (_direction.x > 0) else true
+		_idleDirection = "idle_side"
 	else:
-		$animation.play("idle")
+		$animation.play(_idleDirection)
 
 
 func _key_listeners() -> void:
