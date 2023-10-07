@@ -39,15 +39,19 @@ func _animation() -> void:
 	if (_direction.y == -1):
 		$animation.play("walking_up")
 		_idleDirection = "idle_back"
+		$collision.position.x = 0
 	elif (_direction.y == 1):
 		$animation.play("walking_down")
 		_idleDirection = "idle_front"
+		$collision.position.x = 0
 	elif (_direction.x != 0):
 		$animation.play("walking_side")
 		$animation.flip_h = false if (_direction.x > 0) else true
 		_idleDirection = "idle_side"
+		$collision.position.x = -3 if (_direction.x > 0) else 3
 	else:
 		$animation.play(_idleDirection)
+		$collision.position.x = 0
 
 
 func _key_listeners() -> void:
