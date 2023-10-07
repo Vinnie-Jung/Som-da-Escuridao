@@ -5,8 +5,13 @@
 
 [node name="level_01" type="Node2D"]
 
+<<<<<<< HEAD
 [node name="candle" parent="." instance=ExtResource("1_qx7hh")]
 position = Vector2(547, 278)
 
 [node name="player" parent="." instance=ExtResource("1_j3306")]
 position = Vector2(179, 191)
+=======
+[node name="Player" parent="." instance=ExtResource("1_j3306")]
+position = Vector2(20, 500)
+>>>>>>> player-movement
