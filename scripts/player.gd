@@ -48,6 +48,8 @@ func _animation() -> void:
 		$animation.play("walking_side")
 		$animation.flip_h = false if (_direction.x > 0) else true
 		_idleDirection = "idle_side"
+		
+		# Adjusting collisior's position to fit animation
 		$collision.position.x = -3 if (_direction.x > 0) else 3
 	else:
 		$animation.play(_idleDirection)
