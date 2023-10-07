@@ -1,12 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bmxx2wamyee31"]
+[gd_scene load_steps=2 format=3 uid="uid://blqlm7ng2yh6u"]
 
 [ext_resource type="PackedScene" uid="uid://nmgk7u26udq4" path="res://scenes/player.tscn" id="1_j4jer"]
-[ext_resource type="PackedScene" uid="uid://dchdwxuxfljky" path="res://scenes/candle.tscn" id="2_uh32v"]
 
 [node name="level_01" type="Node2D"]
 
 [node name="player" parent="." instance=ExtResource("1_j4jer")]
-position = Vector2(272, 214)
-
-[node name="candle" parent="." instance=ExtResource("2_uh32v")]
-position = Vector2(549, 221)
