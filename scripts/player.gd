@@ -20,13 +20,13 @@ func _movement(delta : float) -> void:
 func _animation() -> void:
 	# Animation tree (temporary)
 	if (_direction.y == -1):
-		$Animation.play("running_up")
+		$animation.play("running_up")
 	elif (_direction.y == 1):
-		$Animation.play("running_down")
+		$animation.play("running_down")
 	elif (_direction.x != 0):
-		$Animation.play("running_side")
-		$Animation.flip_h = false
+		$animation.play("running_side")
+		$animation.flip_h = false
 		if (_direction.x < 0):
-			$Animation.flip_h = true
+			$animation.flip_h = true
 	else:
-		$Animation.play("idle")
+		$animation.play("idle")

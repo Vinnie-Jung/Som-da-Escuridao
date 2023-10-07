@@ -1,9 +1,9 @@
 [gd_scene load_steps=25 format=3 uid="uid://bloksv75bt71v"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_l3ug1"]
-[ext_resource type="Texture2D" uid="uid://v5jmo4tna0tn" path="res://assets/sprites/player/running_side.png" id="2_84gxq"]
-[ext_resource type="Texture2D" uid="uid://ua8kkjq07i7e" path="res://assets/sprites/player/running_down.png" id="3_voo0a"]
-[ext_resource type="Texture2D" uid="uid://bwhncppx5kywg" path="res://assets/sprites/player/running_up.png" id="4_iew3n"]
+[ext_resource type="Texture2D" uid="uid://v5jmo4tna0tn" path="res://assets/sprites/player/moving_side.png" id="2_84gxq"]
+[ext_resource type="Texture2D" uid="uid://ua8kkjq07i7e" path="res://assets/sprites/player/moving_down.png" id="3_voo0a"]
+[ext_resource type="Texture2D" uid="uid://bwhncppx5kywg" path="res://assets/sprites/player/moving_up.png" id="4_iew3n"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rrs0y"]
 atlas = ExtResource("2_84gxq")
@@ -158,14 +158,13 @@ animations = [{
 radius = 19.0
 height = 136.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="player" type="CharacterBody2D"]
 script = ExtResource("1_l3ug1")
 
-[node name="Animation" type="AnimatedSprite2D" parent="."]
+[node name="animation" type="AnimatedSprite2D" parent="."]
 scale = Vector2(1.12946, 1)
 sprite_frames = SubResource("SpriteFrames_0mph0")
-animation = &"running_up"
-frame_progress = 0.320079
+animation = &"idle"
 
-[node name="Collision" type="CollisionShape2D" parent="."]
+[node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_mqaye")
