@@ -68,6 +68,7 @@ func _key_listeners() -> void:
 
 
 func _on_sprint_timer_timeout():
+	# when stops sprinting
 	if (_sprinting):
 		_sprinting = false
 		$sprint_timer.wait_time = 5.0
