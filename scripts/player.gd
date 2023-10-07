@@ -56,14 +56,17 @@ func _key_listeners() -> void:
 	
 	# Interact 
 	if (Input.is_action_pressed("interact")):
+		print("Interect button pressed")
 		pass
 	
 	# Inventory
 	if (Input.is_action_pressed("inventory")):
+		print("Inventory button pressed")
 		pass
 	
 	# Settings
 	if (Input.is_action_pressed("settings")):
+		print("Settings button pressed")
 		pass
 
 
