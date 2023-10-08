@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dyrtf21twpfc"]
+
+[ext_resource type="Texture2D" uid="uid://mgmsw0hk4alh" path="res://assets/sprites/gui/keyboard_15.png" id="1_elca4"]
+
+[node name="interaction_button" type="Node2D"]
+position = Vector2(0, -50)
+scale = Vector2(0.5, 0.5)
+
+[node name="sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_elca4")

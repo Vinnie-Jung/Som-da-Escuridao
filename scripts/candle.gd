@@ -1,12 +1,13 @@
 extends Area2D
 
-@onready var _playerIn : bool = false
+@onready var interactionButtonScene : PackedScene = preload("res://scenes/interaction_button.tscn")
+@onready var interactionButton : Node2D
 
 func _on_body_entered(body):
-	_playerIn = true
-	print("In item area...")
+	# Instantiate and show the HUD button for interaction
+	interactionButton = interactionButtonScene.instantiate()
+	self.add_child(interactionButton)
 
 
 func _on_body_exited(body):
-	_playerIn = false
-	print("Out of item area")
+	interactionButton.queue_free()
